@@ -13,14 +13,13 @@ import Spinner from "./Components/Spinner/Spinner";
 import { useEffect, useState } from "react";
 
 function App() {
+const[isLoading,setIsLOading] = useState(false);
 
-  const[isLoading,setIsLoading] = useState(false);
+useEffect( () => {
+  setIsLOading(true);
+  setIsLOading(false)
+},[])
 
-  useEffect( () => {
-    setIsLoading(true);
-
-    setIsLoading(false)
-  },[])
   return (
     <div>
       <BrowserRouter>
@@ -36,7 +35,8 @@ function App() {
           <Route path="/Quotes" element={<Quotes />} />
         </Routes>
       </BrowserRouter>
-      {isLoading ?  <p>Application loaded successfully</p>: <Spinner /> }
+      {isLoading ? <p>Application Loaded Successfully</p> : <Spinner />}
+      
     </div>
   );
 }
