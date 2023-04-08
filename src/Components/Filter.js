@@ -11,7 +11,7 @@ const Filter = () => {
         console.log(res.data.carts);
         setCartData(res.data.carts);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.log(err)); 
   };
 
   useEffect(() => {
