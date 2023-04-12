@@ -1,12 +1,14 @@
-import React from 'react';
-import spinner from "../Spinner/Loading.css";
+import * as React from 'react';
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
+import { useState,useEffect } from 'react';
 
-const Spinner = () => {
+const CircularIndeterminate = () => {
+    
   return (
-    <div className="spinner-container">
-      <div className="spinner"></div>
-    </div>
+    <Box sx={{ display: 'flex',justifyContent:"center",alignItems:"center",height:"100vh" }}>
+      <CircularProgress />
+    </Box>
   );
-};
-
-export default Spinner;
+}
+export default CircularIndeterminate;
