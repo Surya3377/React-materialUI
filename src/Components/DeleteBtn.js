@@ -6,7 +6,7 @@ const DeleteBtn = ({todoData, deleteHandler}) => {
       {todoData.map((todos, index) => {
         return (
           <div>
-            {todoData}
+            {todos}
             <button onClick={ () => deleteHandler(index)}>DELETE</button>
           </div>
         );
