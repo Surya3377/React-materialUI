@@ -3,7 +3,7 @@ import { BiBluetooth } from "react-icons/bi";
 import { AiOutlineWifi } from "react-icons/ai";
 import { AiFillSignal } from "react-icons/ai";
 import { MdBatteryChargingFull } from "react-icons/md";
-import classes from "../Task/Task.css";
+import classes from "./Task.module.css";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import foodStreet from "../assets/images/foodStreet.jpeg";
 
