@@ -35,7 +35,7 @@
 
 // export default Practice;
 
-//REMOVING REPEATED LETTERS
+                              //REMOVING REPEATED LETTERS
 
 // import { useState } from "react";
 
@@ -65,7 +65,7 @@
 
 // export default App;
 
-//SHOW AND HIDE BUTTON
+                            //SHOW AND HIDE BUTTON
 
 // import React from 'react'
 // import { useState } from 'react'
@@ -86,7 +86,7 @@
 
 // export default Practice
 
-//  TWO WAY DATA BINDING
+                             //  TWO WAY DATA BINDING
 
 // import React from 'react'
 // import { useState } from 'react'
@@ -109,13 +109,13 @@
 
 // export default Practice
 
-//   Disable Button
+                                   //   Disable Button
 //  import React from 'react'
 // import { useState } from 'react'
 
 // const Practice = () => {
 
-//     const[vallue,setvallue]= useState("")
+//     const[value,setvallue]= useState("")
 
 //     const textHandler = (event) => {
 //         setvallue(event.target.vallue)
@@ -123,8 +123,8 @@
 
 //   return (
 //     <div>
-//       <input type='text' vallue={vallue} onChange={textHandler}/> <br/>
-//       <button disabled={vallue.length < 1}>submit</button>
+//       <input type='text' value={value} onChange={textHandler}/> <br/>
+//       <button disabled={value.length < 1}>submit</button>
 //       {vallue}
 //     </div>
 //   )
@@ -132,7 +132,7 @@
 
 // export default Practice
 
-//    Update Parent State Challenge (using Callback)
+               //    Update Parent State Challenge (using Callback)
 
 // import { useState } from "react";
 // import Child from "./Child";
@@ -141,13 +141,13 @@
 
 // const Practice = () => {
 
-//     const[vallue,setvallue]=useState("I need to be updated from my child")
+//     const[value,setvallue]=useState("I need to be updated from my child")
 
 //   return (
 //     <div>
 //       <div>
 //         <h2>Parent</h2>
-//         {vallue}
+//         {value}
 //         <h2>Child</h2>
 //         <Child setvallue={setvallue} />
 //       </div>
@@ -430,7 +430,7 @@
 
 // export default Practice;
 
-                         //Reversing Order
+//Reversing Order
 
 // import React from "react";
 
@@ -448,5 +448,3 @@
 // };
 
 // export default Practice;
-
-
