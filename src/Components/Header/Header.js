@@ -1,8 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./Header.module.css";
+import { useNavigate,useRedirect } from "react-router-dom";
 
 const Header = () => {
+
+
+  const navigate = useNavigate();
+
+
+const todoHandler = () => {
+  navigate("/new-Todo")
+}
 
   return (
     <div className={classes.header}>
@@ -11,7 +20,7 @@ const Header = () => {
       </div>
       <div className={classes.header_right}>
         <div>
-          <Link to="/Cart" className={classes.link}>
+          <Link to="/Filter"  className={classes.link}>
             Filter
           </Link>
         </div>
@@ -26,7 +35,7 @@ const Header = () => {
           </Link>
         </div>
         <div>
-          <Link to="/Todo" className={classes.link}>
+          <Link to="/Todo" onClick={{todoHandler}} className={classes.link}>
             Todo
           </Link>
         </div>
@@ -36,7 +45,7 @@ const Header = () => {
           </Link>
         </div>
         <div>
-          <Link to="/Post" className={classes.link}>
+          <Link to="/Quotes" className={classes.link}>
             Quotes
           </Link>
         </div>
