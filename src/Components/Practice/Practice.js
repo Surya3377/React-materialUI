@@ -35,7 +35,7 @@
 
 // export default Practice;
 
-                              //REMOVING REPEATED LETTERS
+//REMOVING REPEATED LETTERS
 
 // import { useState } from "react";
 
@@ -65,7 +65,7 @@
 
 // export default App;
 
-                            //SHOW AND HIDE BUTTON
+//SHOW AND HIDE BUTTON
 
 // import React from 'react'
 // import { useState } from 'react'
@@ -86,7 +86,7 @@
 
 // export default Practice
 
-                             //  TWO WAY DATA BINDING
+//  TWO WAY DATA BINDING
 
 // import React from 'react'
 // import { useState } from 'react'
@@ -109,7 +109,7 @@
 
 // export default Practice
 
-                                   //   Disable Button
+//   Disable Button
 //  import React from 'react'
 // import { useState } from 'react'
 
@@ -132,7 +132,7 @@
 
 // export default Practice
 
-               //    Update Parent State Challenge (using Callback)
+//    Update Parent State Challenge (using Callback)
 
 // import { useState } from "react";
 // import Child from "./Child";
@@ -448,3 +448,225 @@
 // };
 
 // export default Practice;
+//Fibonacci
+
+// const fibonacci = (num) => {
+//   if (num <= 1) {
+//     return num;
+//   }
+//   return fibonacci(num - 1) + fibonacci(num - 2);
+// }
+
+// for (var i = 0; i < 10; i++) {
+//   console.log(fibonacci(i));
+// }
+// export default fibonacci;
+
+//Finding Largest Number
+
+// import React from "react";
+// const Practice = () => {
+//      const num = [1,4,5,3,6,66,44,55,555,77,788,55523]
+//   const findLargestNumber = (num) => {
+//     return Math.max(...num)
+//   }
+
+//   const largestNumber = findLargestNumber(num)
+//   console.log(largestNumber)
+
+//   return (
+//     <div>
+
+//     </div>
+//   )
+
+// };
+
+// export default Practice;
+
+// import React, { useState,useEffect } from 'react'
+
+// const Practice = ({initialTime}) => {
+
+// const array1 = [1,2,3,4]
+// const array2 = [5,6,7,8]
+
+// const newArray = [...array1, ...array2]
+// console.log(...newArray)
+
+//  const removeVowels = (str) => {
+//   return str.replace(/[aeiou]/gi,"")
+//  }
+
+// console.log( removeVowels("Hello World"))
+
+//   const array = [3,5,43,234,6,4,2,7,89,98]
+
+//   const ascendingOrder = (a,b) => {
+//     return a-b
+//   }
+//   const  ascending = array.sort(ascendingOrder)
+
+// console.log(...ascending)
+
+// const array = ["banana", "apple", "cherry", "date"];
+
+// console.log(array.sort())
+
+// function secondSmallestNumber(arr) {
+//   arr.sort(function(a, b) {
+//     return a - b;
+//   });
+
+//   return arr[1];
+// }
+// const numbers = [9, 3, 7, 5, 1, 8, 2, 6, 4];
+// const secondSmallest = secondSmallestNumber(numbers);
+// console.log(secondSmallest);
+
+// const [time, setTime] = useState(initialTime);
+
+//   useEffect(() => {
+//     if (time > 0) {
+//       const intervalId = setInterval(() => {
+//         setTime(time - 1);
+//       }, 1000);
+//       return () => clearInterval(intervalId);
+//     }
+//   }, [time]);
+
+//   return (
+//     <div>
+//           {time === 0 ? (
+//         <p>Time's up!</p>
+//       ) : (
+//         <p>{`Time remaining: ${time} seconds`}</p>
+//       )}
+//     </div>
+//   )
+// }
+
+// export default Practice;
+
+// import React from "react";
+// import { useState } from "react";
+
+// const Practice = () => {
+//   const [color, setColor] = useState("black");
+
+//   const colors = [
+//     "#000000",
+//     "gray",
+//     "#FF0000",
+//     "#00FF00",
+//     "#0000FF",
+//     "#FFFF00",
+//     "#FF00FF",
+//     "#00FFFF",
+//   ];
+
+//   const handleClick = (color) => {
+//     setColor(color)
+//   }
+
+//   return (
+//     <div>
+//       {color.map( (color,index) => {
+//         return(
+//           <div 
+//           key={index}
+//           style={{
+//             backgroundColor: color,
+//             width: "30px",
+//             height: "30px",
+//             display: "inline-block",
+//             margin: "5px",
+//             cursor: "pointer",
+//             border: `1px solid ${
+//               color === selectedColor ? "black" : "white"
+//             }`,
+//           }}
+//           onClick={() => handleClick(color)}
+//           ></div>
+//         )
+//       })}
+//     </div>
+//   )
+// };
+
+// export default Practice;
+
+
+// import React, { useState } from "react";
+
+// const Practice = () => {
+//   const [name, setName] = useState("");
+//   const [email, setEmail] = useState("");
+//   const [phone, setPhone] = useState("");
+//   const [nameError, setNameError] = useState("");
+//   const [emailError, setEmailError] = useState("");
+//   const [phoneError, setPhoneError] = useState("");
+
+//   const handleNameChange = (event) => {
+//     setName(event.target.value);
+//     setNameError("");
+//   };
+
+//   const handleEmailChange = (event) => {
+//     setEmail(event.target.value);
+//     setEmailError("");
+//   };
+
+//   const handlePhoneChange = (event) => {
+//     setPhone(event.target.value);
+//     setPhoneError("");
+//   };
+
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+
+//     if (!name) {
+//       setNameError("Please enter your name");
+//     }
+
+//     if (!email) {
+//       setEmailError("Please enter your email");
+//     } else if (!/\S+@\S+\.\S+/.test(email)) {
+//       setEmailError("Please enter a valid email address");
+//     }
+
+//     if (!phone) {
+//       setPhoneError("Please enter your phone number");
+//     } else if (!/^\d{10}$/.test(phone)) {
+//       setPhoneError("Please enter a 10-digit phone number");
+//     }
+
+//     if (name && email && phone) {
+//       alert(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}`);
+//     }
+//   };
+
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <div>
+//         <label htmlFor="name">Name:</label>
+//         <input type="text" id="name" value={name} onChange={handleNameChange} />
+//         {nameError && <div>{nameError}</div>}
+//       </div>
+//       <div>
+//         <label htmlFor="email">Email:</label>
+//         <input type="email" id="email" value={email} onChange={handleEmailChange} />
+//         {emailError && <div>{emailError}</div>}
+//       </div>
+//       <div>
+//         <label htmlFor="phone">Phone:</label>
+//         <input type="tel" id="phone" value={phone} onChange={handlePhoneChange} />
+//         {phoneError && <div>{phoneError}</div>}
+//       </div>
+//       <button type="submit">Submit</button>
+//     </form>
+//   );
+// };
+
+// export default Practice;
+

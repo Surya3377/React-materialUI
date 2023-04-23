@@ -1,0 +1,71 @@
+
+/* .header{
+    background-color: aqua;
+    color: white;
+    text-align: center;
+} */
+
+.dropDowns_buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    height: 80px;
+    background-color: gray;
+    box-shadow: 0px 0px 50px black;
+}
+.dropDowns_left{
+    display: flex;
+    gap: 20px;
+}
+
+.buttons_right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.dropDown{
+    color: white;
+    background-color: red !important;
+}
+
+
+.dropDown:hover{
+    background-color: red !important;
+    color: azure !important;
+}
+
+.dropDown1{
+    color: black;
+}
+
+.dropDown1:hover{
+    color: black !important;
+}
+
+.dropDown2{
+    color: red;
+}
+.dropDown2:hover{
+    color: red;
+}   
+
+.btn{
+    background-color: rgb(19, 45, 45);
+    color: rgb(218, 184, 184);
+}
+
+.search_btn{
+    background-color: blueviolet;
+    color: aqua;
+}
+
+.download{
+    background-color: orangered;
+    color: yellowgreen;
+}
+
+.powerOff{
+    background-color: darkgoldenrod;
+    color:yellow
+}

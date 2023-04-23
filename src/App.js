@@ -1,4 +1,5 @@
 import "./App.css";
+// import Bootstrap from "./Bootstrap/Bootstrap";
 // import Delete from "./Components/Delete";
 // import Header from "./Components/Header/Header";
 // import Post from "./Components/Post";
@@ -12,16 +13,22 @@ import "./App.css";
 // import { useEffect, useState } from "react";
 // import Filter from "./Components/Filter";
 // import Revision from "./Revision/Revision";
-import Products from "./Shopping Website/Products";
+// import Products from "./Shopping Website/Products";
+// import Practice from "./Components/Practice/Practice";
+import Layout from "../src/Components/antd/Layout/Layout";
 
 
-const App = () => {
+
+const App = (num) => {
 // const[isLoading,setIsLOading] = useState(false);
 
 // useEffect( () => {
 //   setIsLOading(true);
 //   setIsLOading(false)
 // },[])
+
+
+  
 
   return (
     <div>
@@ -42,7 +49,10 @@ const App = () => {
        */}
       
       {/* <Revision /> */}
-    <Products />
+    {/* <Products /> */}
+    <Layout />
+    {/* <Practice /> */}
+     {/* <Bootstrap /> */}
     </div>
 
 
